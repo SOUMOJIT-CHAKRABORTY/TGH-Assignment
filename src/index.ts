@@ -12,9 +12,9 @@ configDotenv();
 app.use("/api", adminRouter);
 app.use("/api", studentRouter);
 
-// app.get("/api", (req, res) => {
-//   res.send("Hello world");
-// });
+app.all("*", (req, res) => {
+  res.status(404).json({ message: "Route not found" });
+});
 const db = process.env.MONGO_URI;
 mongoose
   .connect(db)
