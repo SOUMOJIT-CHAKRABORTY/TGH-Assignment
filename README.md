@@ -4,9 +4,9 @@
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
+- Node.js (version 18 or above)
 - MongoDB Atlas account
-- Postman (for testing)
+- Postman 
 
 ### Installation
 
